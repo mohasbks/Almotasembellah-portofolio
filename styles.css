@@ -64,6 +64,17 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    min-height: 80px;
+}
+
+.typewriter {
+    border-right: 3px solid #000;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { border-color: #000; }
+    51%, 100% { border-color: transparent; }
 }
 
 .hero-subtitle {
@@ -71,13 +82,58 @@ body {
     font-weight: 500;
     color: #666;
     margin-bottom: 3rem;
+    opacity: 0;
+    animation: slideInUp 0.8s ease-out 2.5s forwards;
 }
 
 .scroll-arrow {
-    animation: bounce 2s infinite;
     cursor: pointer;
     font-size: 2rem;
     color: #000;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 3s forwards, gentleBounce 3s ease-in-out 3.6s infinite;
+}
+
+@keyframes gentleBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes subtlePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes gentleFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+@keyframes softGlow {
+    0%, 100% { box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); }
+    50% { box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15); }
 }
 
 @keyframes bounce {
@@ -107,6 +163,15 @@ body {
 .about-section {
     background-color: #000;
     color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .about-section .section-title {
@@ -117,10 +182,14 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .about-points {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .about-points li {
@@ -128,6 +197,8 @@ body {
     margin-bottom: 1rem;
     padding-left: 2rem;
     position: relative;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .about-points li::before {
@@ -136,6 +207,31 @@ body {
     font-size: 1.5rem;
     position: absolute;
     left: 0;
+    top: 0;
+}
+
+
+.community-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.community-btn {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.community-btn:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom-color: #fff;
 }
 
 .project-filters {
@@ -173,8 +269,9 @@ body {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
 }
 
 .project-image {
@@ -275,6 +372,7 @@ body {
 .skill-category:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
 .skill-title {
@@ -341,6 +439,8 @@ body {
 .btn-primary:hover {
     background-color: #333;
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .social-links {
@@ -381,7 +481,7 @@ body {
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.6s ease;
+    transition: all 0.8s ease;
 }
 
 .fade-in.visible {
@@ -389,6 +489,57 @@ body {
     transform: translateY(0);
 }
 
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.5s ease;
+}
+
+.zoom-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.rotate-in {
+    opacity: 0;
+    transform: rotate(-10deg);
+    transition: all 0.7s ease;
+}
+
+.rotate-in.visible {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
 .project-card.hidden {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .community-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
