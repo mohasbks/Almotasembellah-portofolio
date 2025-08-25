@@ -75,11 +75,6 @@ A modern, responsive portfolio website showcasing my journey as a **Frontend Dev
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
 
-### AI/ML Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
 </div>
 
 ---
@@ -93,7 +88,6 @@ portofolio/
 ├── ⚡ script.js           # Interactive JavaScript
 ├── 📋 mycv.pdf            # Resume/CV file
 ├── 📖 README.md           # Project documentation
-└── 🖼️ assets/             # Images and media files
 ```
 
 ---
@@ -179,7 +173,7 @@ portofolio/
 - **Year**: 2023
 
 #### 🛒 E-commerce Platform
-- **Tech Stack**: React, TypeScript, TailwindCSS
+- **Tech Stack**: HTML,CSS,JavaScript,bootstarp,Responsive Design
 - **Description**: Full-featured online shopping platform
 - **Year**: 2023
 
