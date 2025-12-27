@@ -18,7 +18,7 @@
 
 Hey! I'm **Al-Moatasem Bellah** — an AI student at the Russian Egyptian University 🎓
 
-I combine my **passion for coding** (Web & AI) with **entrepreneurial thinking**. I'm building a strong ecosystem for Arab freelancers through my platform **[Rowad](https://rowad.rf.gd)**.
+I combine my **passion for coding** (Web & AI) with **entrepreneurial thinking**. I'm building a strong ecosystem for Arab freelancers through my platform **[Rowad]()**.
 
 <div align="center">
 
