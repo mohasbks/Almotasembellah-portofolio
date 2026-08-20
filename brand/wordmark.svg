@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Almotasembellah Awwad</title><desc id="desc">Official editorial wordmark</desc>
+  <rect width="1600" height="500" fill="#0b0b0b"/>
+  <g fill="none" stroke="#eae7df" stroke-opacity=".15"><path d="M48 48h1504v404H48z"/><path d="M48 146h1504M48 354h1504M424 48v404M800 48v404M1176 48v404"/></g>
+  <text x="48" y="230" fill="#eae7df" font-family="Arial,Helvetica,sans-serif" font-size="190" font-weight="700" letter-spacing="-14">ALMOTASEMBELLAH</text>
+  <text x="48" y="420" fill="#eae7df" font-family="Arial,Helvetica,sans-serif" font-size="216" font-weight="700" letter-spacing="-16">AWWAD</text>
+  <text x="1260" y="410" fill="#c65d32" font-family="monospace" font-size="42" font-weight="700">AA/26</text>
+</svg>
