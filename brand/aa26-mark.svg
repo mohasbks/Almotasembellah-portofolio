@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">AA/26</title><desc id="desc">Almotasembellah Awwad monogram</desc>
-  <rect width="512" height="512" fill="#0b0b0b"/>
-  <path d="M40 40h432v432H40z" fill="none" stroke="#eae7df" stroke-width="2"/>
-  <path d="M40 156h432M156 40v432" stroke="#eae7df" stroke-opacity=".2"/>
-  <text x="58" y="332" fill="#eae7df" font-family="Arial,Helvetica,sans-serif" font-size="170" font-weight="700" letter-spacing="-18">AA</text>
-  <text x="290" y="405" fill="#c65d32" font-family="Arial,Helvetica,sans-serif" font-size="92" font-weight="700" letter-spacing="-7">/26</text>
-  <text x="58" y="84" fill="#eae7df" font-family="monospace" font-size="15" letter-spacing="3">INDEPENDENT DIGITAL STUDIO</text>
-</svg>

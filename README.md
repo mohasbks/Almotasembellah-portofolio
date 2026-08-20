@@ -14,7 +14,7 @@ Official portfolio of **Almotasembellah Awwad**, an AI Engineer and Digital Prod
 
 ## Brand kit
 
-The reusable `AA/26` identity system, official bios, LinkedIn cover, social template and email signature are available in [`brand/`](brand/).
+The Human Technologist identity system, official bios, LinkedIn cover, social template, portrait brief and email signature are available in [`brand/`](brand/).
 
 ## Local preview
 

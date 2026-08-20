@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
-  <title id="title">AA/26 social post template</title><desc id="desc">Reusable editorial template for project and insight posts</desc>
-  <rect width="1080" height="1080" fill="#eae7df"/>
+  <title id="title">Almotasembellah Awwad social post template</title><desc id="desc">Reusable editorial template for project and insight posts</desc>
+  <rect width="1080" height="1080" fill="#f5f1e8"/>
   <g fill="none" stroke="#0b0b0b" stroke-opacity=".18"><path d="M48 48h984v984H48z"/><path d="M294 48v984M540 48v984M786 48v984"/></g>
-  <text x="72" y="100" fill="#c65d32" font-family="monospace" font-size="20" font-weight="700">AA/26 — NOTE 001</text>
+  <text x="72" y="100" fill="#1f5b49" font-family="monospace" font-size="20" font-weight="700">BUILD NOTE — 001</text>
   <text x="72" y="312" fill="#0b0b0b" font-family="Arial,Helvetica,sans-serif" font-size="108" font-weight="700" letter-spacing="-7">ONE CLEAR</text>
   <text x="72" y="414" fill="#0b0b0b" font-family="Arial,Helvetica,sans-serif" font-size="108" font-weight="700" letter-spacing="-7">IDEA GOES</text>
-  <text x="72" y="516" fill="#c65d32" font-family="Arial,Helvetica,sans-serif" font-size="108" font-weight="700" letter-spacing="-7">HERE.</text>
+  <text x="72" y="516" fill="#1f5b49" font-family="Arial,Helvetica,sans-serif" font-size="108" font-weight="700" letter-spacing="-7">HERE.</text>
   <text x="72" y="760" fill="#0b0b0b" font-family="Arial,Helvetica,sans-serif" font-size="32">A short argument, product lesson or build note.</text>
   <path d="M72 820h936" stroke="#0b0b0b"/>
   <text x="72" y="882" fill="#0b0b0b" font-family="monospace" font-size="19">AI · PRODUCTS · EXPERIENCES</text>
   <text x="72" y="982" fill="#0b0b0b" font-family="monospace" font-size="17">ALMOTASEMBELLAH AWWAD</text>
-  <rect x="956" y="930" width="52" height="52" fill="#c65d32"/>
+  <rect x="956" y="930" width="52" height="52" fill="#1f5b49"/>
 </svg>

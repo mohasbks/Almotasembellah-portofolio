@@ -24,4 +24,3 @@ AI Engineer & Digital Product Builder | Applied AI · Product Engineering · Edi
 
 AI Engineer & Digital Product Builder
 Building useful AI products from Egypt to the world.
-AA/26

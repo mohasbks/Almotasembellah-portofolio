@@ -1,4 +1,4 @@
-# ALMOTASEMBELLAH AWWAD — Brand Kit v1
+# ALMOTASEMBELLAH AWWAD — Human Technologist Identity
 
 ## Position
 
@@ -16,8 +16,7 @@ Arab-first startups, founders and product teams; international technology teams 
 
 - Primary name: **Almotasembellah Awwad**
 - Arabic identity: **المعتصم بالله عوّاد**
-- Descriptor: **Independent Digital Studio**
-- Monogram: **AA/26**
+- Descriptor: **AI Engineer & Digital Product Builder**
 - GitHub: **Almotasembellahawwad**
 
 ## Pillars
@@ -30,16 +29,16 @@ Arab-first startups, founders and product teams; international technology teams 
 
 | Token | Value | Use |
 |---|---|---|
-| Carbon | `#0B0B0B` | Primary background and text |
-| Bone | `#EAE7DF` | Primary light surface and text |
-| Signal | `#C65D32` | One controlled accent |
-| Graphite | `#8E8B83` | Secondary information |
+| Ink | `#171A17` | Primary text and dark surfaces |
+| Warm White | `#F5F1E8` | Primary human, warm surface |
+| Deep Green | `#1F5B49` | Controlled signal and links |
+| Graphite | `#59615C` | Secondary information |
 
 - Display type: condensed or neo-grotesk sans serif, bold and oversized.
 - Body type: neutral sans serif with generous leading.
 - Metadata: monospace, uppercase, small and precise.
 - Grid: visible editorial columns, asymmetric but aligned.
-- Imagery: real product interfaces, system diagrams and deliberate monochrome photography.
+- Imagery: a real, natural portrait and real product interfaces. System diagrams support the story but never replace proof.
 
 ## Voice
 
@@ -53,7 +52,7 @@ Arab-first startups, founders and product teams; international technology teams 
 - Blue-purple AI gradients, glassmorphism and generic SaaS cards.
 - Excess badges, animated typing effects and vanity counters.
 - Calling unfinished prototypes complete products.
-- Using `®` unless the mark is officially registered.
+- Studio language, invented monograms or registration symbols.
 
 ## Content rhythm
 
