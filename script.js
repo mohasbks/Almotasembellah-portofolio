@@ -15,7 +15,7 @@ const buildTraceLabel = buildTrace?.querySelector('em');
 const traceSections = [...document.querySelectorAll('main > section')];
 const traceNames = {
   top: 'INTRO', statement: 'POSITION', work: 'SELECTED WORK',
-  services: 'CAPABILITIES', lab: 'PROJECT ARCHIVE', about: 'ABOUT', contact: 'CONTACT'
+  services: 'CAPABILITIES', freelance: 'FREELANCE PRACTICE', lab: 'PROJECT ARCHIVE', about: 'ABOUT', contact: 'CONTACT'
 };
 
 const translations = {
