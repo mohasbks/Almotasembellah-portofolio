@@ -9,6 +9,14 @@ const langSwitch = document.querySelector('.lang-switch');
 const progress = document.querySelector('.page-progress i');
 const cursor = document.querySelector('.cursor');
 const cursorLabel = cursor.querySelector('span');
+const buildTrace = document.querySelector('.build-trace');
+const buildTraceNumber = buildTrace?.querySelector('b');
+const buildTraceLabel = buildTrace?.querySelector('em');
+const traceSections = [...document.querySelectorAll('main > section')];
+const traceNames = {
+  top: 'INTRO', statement: 'POSITION', work: 'SELECTED WORK',
+  services: 'CAPABILITIES', lab: 'PROJECT ARCHIVE', about: 'ABOUT', contact: 'CONTACT'
+};
 
 const translations = {
   ar: {
@@ -54,6 +62,7 @@ function toggleMenu(force) {
   body.classList.toggle('menu-open', open);
   menuToggle.setAttribute('aria-expanded', String(open));
   menu.setAttribute('aria-hidden', String(!open));
+  menu.inert = !open;
   const lang = root.lang === 'en' ? 'en' : 'ar';
   menuToggle.setAttribute('aria-label', open ? translations[lang].close : translations[lang].menu);
 }
@@ -62,8 +71,25 @@ langSwitch.addEventListener('click', () => setLanguage(root.lang === 'ar' ? 'en'
 menuToggle.addEventListener('click', () => toggleMenu());
 menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => toggleMenu(false)));
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') toggleMenu(false);
+  if (event.key === 'Escape' && menu.classList.contains('open')) {
+    toggleMenu(false);
+    menuToggle.focus();
+  }
 });
+
+menu.inert = true;
+
+function updateBuildTrace() {
+  if (!buildTrace) return;
+  const marker = innerHeight * .42;
+  let activeIndex = 0;
+  traceSections.forEach((section, index) => {
+    if (section.getBoundingClientRect().top <= marker) activeIndex = index;
+  });
+  const active = traceSections[activeIndex];
+  buildTraceNumber.textContent = String(activeIndex).padStart(2, '0');
+  buildTraceLabel.textContent = traceNames[active.id] || active.id.toUpperCase();
+}
 
 function updateScrollState() {
   const maxScroll = document.documentElement.scrollHeight - innerHeight;
@@ -72,6 +98,7 @@ function updateScrollState() {
   const sample = document.elementFromPoint(innerWidth / 2, Math.min(90, innerHeight / 2));
   const paperSection = sample?.closest('.paper');
   topbar.classList.toggle('on-paper', Boolean(paperSection) && !menu.classList.contains('open'));
+  updateBuildTrace();
 }
 
 addEventListener('scroll', updateScrollState, { passive: true });
